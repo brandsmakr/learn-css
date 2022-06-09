@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudeo selectors</title>
+
+</head>
+
+<style>
+    body{
+        font-size: x-large;
+        text-align: center;
+
+    }
+
+    /* 
+        all p with in div will apply these property
+    */
+    /* div P{
+        background-color: red;
+        color: white;
+        padding: 10px;
+    } */
+
+    /* 
+        the p property with in first or direct child of a div will apply below properties
+    */
+    /* div > p{
+        background-color: purple;
+        color: white;
+        padding: 10px;
+    } */
+
+    /* 
+        the p which has below than div is applied this properties
+    */
+    div + p{
+        background-color: blue;
+        color: white;
+        padding: 10px;
+    }
+
+
+</style>
+
+<body>
+    
+    <!-- 
+        psuedo selectors
+     -->
+    <div>
+        <div>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero culpa perspiciatis in!
+            </p>
+            <ul>
+                <li><p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Oum porro corrupti?
+                </p></li>
+            </ul>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Areas</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer'
+        ;
+    }
+    .item{
+        background: linear-gradient(rgb(219, 139, 219), rgb(223, 223, 132));
+        border: 2px solid slateblue;
+        text-align: center;
+        padding: 8px 23px;
+        color: slateblue;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+</style>
+<body>
+   
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut obcaecati perferendis exercitationem perspiciatis hic delectus veniam debitis laborum eos molestias, id possimus nihil ipsum architecto expedita inventore omnis quia corporis accusantium assumenda voluptas aliquam cum distinctio dolor? Ut libero repudiandae ex neque nesciunt natus, recusandae accusamus, architecto sit, omnis adipisci rem qui sint fugit aliquid blanditiis!
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sit saepe impedit dolorem quaerat. Dolorum voluptates ad fuga suscipit tempore sit dolore laboriosam praesentium quisquam earum explicabo, atque perspiciatis consequatur autem mollitia, sapiente velit aspernatur repellat vero eos tempora in? Numquam, sunt!
+        </div>
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque error assumenda nostrum.
+        </footer>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div> -->
+        <!-- <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
